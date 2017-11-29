@@ -1,9 +1,11 @@
-<h2>Some stats</h2>
+<p class = "intro">Very rough stats about content, for content designers. Canaries can die from natural causes: don't ever use these numbers on their own to make decisions.</p>
 
-<p>What stats do you want?</p>
+<p>Lecture over: get your stats.</p>
+
+<p>NB: this currently only works for slugs beginning '/guidance'. If you know why, why not <a href="https://github.com/benjaminmortimer/canary">open a pull request</a>?</p>
 
 <form method="post" action="/info">
-	<p><label>Some text: <input type="text" name="slug"></p>
+	<p><label>Enter a slug: <input type="text" name="slug"></p>
 	<button type="submit">Continue</button>
 </form>
 
@@ -13,4 +15,3 @@
 <p>Number of h2's: <%= stats["h2_count"]%></p>
 <p>Number of p's: <%= stats["p_count"]%></p>
 <p>Number of links: <%= stats["a_count"]%></p>
-
