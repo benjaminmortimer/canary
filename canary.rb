@@ -11,8 +11,10 @@ get '/' do
 end
 
 post '/info' do
-	url = "https://www.gov.uk/api/content#{params['slug']}"
-	erb :info, :locals => {:stats => Report::report(url)}
+	slug = params['slug']
+	url = "https://www.gov.uk/api/content#{slug}"
+	erb :info, :locals => {:text_of_slug => slug,
+		:stats => Report::report(url)}
 end
 
 
