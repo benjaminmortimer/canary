@@ -12,7 +12,7 @@ end
 
 post '/info' do
 	url = "https://www.gov.uk/api/content#{params['slug']}"
-	erb :index, :locals => {:stats => Report::report(url)}
+	erb :info, :locals => {:stats => Report::report(url)}
 end
 
 
