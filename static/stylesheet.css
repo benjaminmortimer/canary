@@ -2,3 +2,12 @@ body {
 	margin: 3em 3em 3em 3em;
 	font-family: sans-serif;
 }
+
+.intro {
+	font-size: 2em;
+	color: DarkGrey;
+}
+
+.big_text {
+	font-size: 3em;
+}
