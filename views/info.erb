@@ -1,9 +1,40 @@
-<p>Stats for</p>
+<p class="intro">Stats for</p>
 <p class="big_text"><%= text_of_slug %></p>
 
-<p>Total number of tags: <%= stats["total_tags_count"]%></p>
-<p>Number of h2's: <%= stats["h2_count"]%></p>
-<p>Number of p's: <%= stats["p_count"]%></p>
-<p>Number of links: <%= stats["a_count"]%></p>
+<table>
+	
+	<tr>
+		<th>Total number of tags</th>
+		<td><%= stats["total_tags_count"]%></td>
+	</tr>
+
+	<tr>
+		<th>Number of h2's</th>
+		<td><%= stats["h2_count"]%></td>
+	</tr>
+
+	<tr>
+		<th>Number of p's</th>
+		<td><%= stats["p_count"]%></td>
+	</tr>
+
+	<tr>
+		<th>Number of links</th>
+		<td><%= stats["a_count"]%></td>	
+	</tr>
+
+	<tr>
+		<th>Link density</th>
+		<td><%= stats["link_density"]%></td>
+	</tr>
+
+	<tr>
+		<th>Heading density</th>
+		<td><%= stats["heading_density"]%></td>
+	</tr>
+
+</table>
+
+<%= graph %>
 
 <p><a href="/">Check another slug</a></p>
